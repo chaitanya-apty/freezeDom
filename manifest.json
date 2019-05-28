@@ -7,9 +7,13 @@
     "content_scripts": [
         {
           "matches": ["https://*/**", "http://*/**"],
-          "js": ["js/freeze.js"]
+          "js": ["js/helpers.js","js/freeze.js"]
         }
     ],
+    "options_ui": {
+      "page": "html/options.html",
+      "open_in_tab": true
+    },
     "browser_action": {
       "default_icon": "images/128x128.png"
     },

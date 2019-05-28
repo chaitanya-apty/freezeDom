@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Freeze Options...</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/optionsPage.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <script type="text/javascript" src="../js/helpers.js" async></script>
+    <script type="text/javascript" src="../js/background/options.js"></script>
+</head>
+
+<body>
+    <div style="float:left">
+        <img src="../images/96x96.png">
+    </div>
+    <div style="clear:both"></div>
+    <div>
+        <form name='Options' class="w3-container">
+
+            <div>
+                <label for="selectors"><b>Freeze Custom Elements</b>:
+                    <span class="tooltip">&#9997;<span class="tooltiptext">CSS Selectors (ex:
+                            #button1,.class2)</span></span>
+                </label>
+                <textarea rows="5" cols="50" name='selectors' id="selectors"></textarea>
+            </div>
+
+            <div>
+                <div>
+                    <input id='buttons' type='checkbox' name='disable' />
+                    <label>
+                        Buttons
+                    </label>
+
+                </div>
+                <div>
+                    <input id='anchored' type='checkbox' name='disable' />
+                    <label>
+                        HyperLink Elements
+                    </label>
+
+                </div>
+                <div>
+                    <input id='image' type='checkbox' name='disable' />
+                    <label>
+                        Images
+                    </label>
+
+                </div>
+            </div>
+            <div>
+                <input id="saveOptions" class='w3-btn w3-black' type="button" value="Update" />
+                <span id="showStatus" style="display: none">&#10003; Details Saved Successfully..</span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
