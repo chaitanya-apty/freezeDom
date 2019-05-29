@@ -6,8 +6,8 @@ class FreezeDom {
     
     freezeDom(event) {
        this.appData = Helpers.getStorageDetails(Helpers.APP_KEY);
-       
-       this.preventWebAction(true, event); 
+       const shouldPrevent = domHelpers.isFreezedType(this.appData, event.target.nodeName);
+       this.preventWebAction(shouldPrevent, event); 
     }
 
     preventWebAction(shouldPrevent, event) {

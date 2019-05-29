@@ -29,9 +29,9 @@ var domHelpers = {
          return false;
      }
     },
-    isFreezedType = (options, elementTag) => {
-        const tagBasedOptions = options[Helpers.mapOptionsKey(elementTag.toLowerCase())];
-        return tagBasedOptions;
+    isFreezedType : (options, elementTag) => {
+        const tagBasedOptionsDisabled = options[Helpers.mapOptionsKey(elementTag.toLowerCase())];
+        return tagBasedOptionsDisabled;
     }
        
 }
